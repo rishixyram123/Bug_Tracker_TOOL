@@ -1,0 +1,30 @@
+@font-face {
+  font-family: headFont;
+  src: url(../public/asset/fonts/Rajdhani/Rajdhani-Light.ttf);
+}
+
+$HeaderFont: "headFont";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bodyBackground;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//use only if top margin for specific class is 0
+@keyframes landingAnimation {
+  from {
+    opacity: 0.6;
+    margin-top: -10vh;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0vh;
+  }
+}

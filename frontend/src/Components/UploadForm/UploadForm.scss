@@ -1,0 +1,32 @@
+@import "../../globalColor.scss";
+@import "../../global.scss";
+.uploadForm {
+  height: 90vh;
+
+  .formBg {
+    background-image: url(../../../public/asset/images/formBg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90vh;
+    animation: landingAnimation 0.8s ease-in-out;
+  }
+
+  .mainBtn {
+    background-color: $xyramOrange;
+  }
+
+  .form {
+    animation: landingAnimation 0.8s ease-in-out;
+  }
+
+  .mainBtn:hover {
+    background-color: $xyramOrange !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .formBg {
+      background-size: 40vh;
+      background-position: top;
+    }
+  }
+}
